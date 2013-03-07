@@ -38,15 +38,15 @@ class Home_Controller extends Base_Controller {
             'items' => array(
               array(
                 'name' => 'Dress Shoes', 
-                'sizes' => array('Size 8', 'Size 9', 'Size 10')
+                'sizes' => array('Size 8', 'Size 9', 'Size 10', 'Size 11', 'Size 12')
               ),
               array(   
                 'name' => 'Tennis Shoes',
-                'sizes' =>array('Size 8', 'Size 9', 'Size 10')
+                'sizes' =>array('Size 8', 'Size 9', 'Size 10', 'Size 11', 'Size 12')
               ),
               array(    
                 'name' => 'Boots',  
-                'sizes' =>array('Size 8', 'Size 9', 'Size 10')
+                'sizes' =>array('Size 8', 'Size 9', 'Size 10', 'Size 11', 'Size 12')
               )
             )
           )
