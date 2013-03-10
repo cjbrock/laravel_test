@@ -1,0 +1,25 @@
+{
+  "Mens": {
+    "Tennis Shoes": [
+      "Size 8",
+      "Size 9",
+      "Size 10",
+      "Size 11",
+      "Size 12"
+    ],
+    "Dress Shoes": [
+      "Size 8",
+      "Size 9",
+      "Size 10",
+      "Size 11",
+      "Size 12"
+    ],
+    "Boots": [
+      "Size 8",
+      "Size 9",
+      "Size 10",
+      "Size 11",
+      "Size 12"
+    ]
+  }
+}

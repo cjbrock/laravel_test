@@ -29,40 +29,13 @@ class Home_Controller extends Base_Controller {
   |   }
   |
   */
-  public function action_index()
-    {
-      return View::make('home.index', array(
-        'genders' => array(
-          array(
-            'name' => 'Mens', 
-            'items' => array(
-              array(
-                'name' => 'Dress Shoes', 
-                'sizes' => array('Size 8', 'Size 9', 'Size 10', 'Size 11', 'Size 12')
-              ),
-              array(   
-                'name' => 'Tennis Shoes',
-                'sizes' =>array('Size 8', 'Size 9', 'Size 10', 'Size 11', 'Size 12')
-              ),
-              array(    
-                'name' => 'Boots',  
-                'sizes' =>array('Size 8', 'Size 9', 'Size 10', 'Size 11', 'Size 12')
-              )
-            )
-          )
-        )
-      ));
-    }
-
-    // 'styles' => array(
-    //  'dress' => 'Dress Shoes'
-    //  'tennis' => 'Tennis Shoes'
-    //  'boots' => 'Boots'
-    //  )
-
-    // 'sizes' => array(
-    //  'sizes' => ['8', '9', '10', '11', '12']
-    //  )
-
-
+    //   public function action_index()
+    // {
+    //   return View::make('home.index', 
+public function action_index()
+  {    
+      $input = json_decode(File::get( path('app').'wg.json' ));
+      var_dump($input);
+      return View::make('home.index')->with('input', $input);
+  }
 }

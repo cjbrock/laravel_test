@@ -11,23 +11,17 @@
 	<div id="menu-bar-container">
 		<div id="menu-bar">
 			<ul>
-				@foreach($genders as $gender)
-				<li><a href="#" class="top_parent">{{ $gender['name'] }}</a>
-				<ul>
-					@foreach($gender['items'] as $item)
-					<li><a href="#" class="parent">{{ $item['name'] }}</a>
-						<ul>
-							@foreach($item['sizes'] as $size)
-								<li><a href="#">{{$size}}</a></li>
-							@endforeach
-						</ul>
-					</li>
-					@endforeach
-				</ul>
-				@endforeach
+				<li><a href="#" class="top_parent">{{ $input->Mens }}</a>
+					<ul>
+						<li><a href="#" class="parent">Item</a>
+							<ul>
+								<li><a href="#">Size</a></li>
+							</ul>
+						</li>
+					</ul>
 				</li>
 			</ul>
-		</div>  
+		</div> 
 	</div>
 </body>
 </html>
