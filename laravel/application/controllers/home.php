@@ -34,17 +34,9 @@ class Home_Controller extends Base_Controller {
     //   return View::make('home.index', 
 public function action_index()
   {    
-      $input = File::get( path('app').'wg.json' );
-      $jsonIterator = new RecursiveIteratorIterator(new RecursiveArrayIterator(json_decode($input, TRUE)), RecursiveIteratorIterator::SELF_FIRST);
-
-      foreach ($jsonIterator as $key => $val) {
-        if(is_array($val)) {
-          echo "$key:\n";
-        } 
-        else {
-          echo "$key => $val\n";
-        }
-      }
+      $input = File::get( path('app').'wg.json');
+      $awesome = json_decode($input, true);
+      var_dump($awesome);
       return View::make('home.index')->with('input', $input);
   }
 }
