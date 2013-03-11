@@ -11,11 +11,11 @@
 	<div id="menu-bar-container">
 		<div id="menu-bar">
 			<ul>
-				<li><a href="#" class="top_parent">{{ $input->Mens }}</a>
+				<li><a href="#" class="top_parent">Moose</a>
 					<ul>
-						<li><a href="#" class="parent">Item</a>
+						<li><a href="#" class="parent">Moosen</a>
 							<ul>
-								<li><a href="#">Size</a></li>
+								<li><a href="#">Many Much Moosen</a></li>
 							</ul>
 						</li>
 					</ul>
