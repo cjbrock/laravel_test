@@ -37,11 +37,15 @@ public function action_index()
       $input = File::get( path('app').'wg.json');
       $awesome = json_decode($input, true);
       $gender = key($awesome);
-      $style = array_get($awesome, 'Mens');
-      $top = array_get($awesome, 'Mens.Tennis Shoes');
+      $style1 = key($awesome['Mens']);
+      $style2 = key($awesome['Mens']);
+      $style3 = key($awesome['Mens']);
+      $top1 = array_get($awesome, 'Mens.Tennis Shoes');
       return View::make('home.index')
-        ->with('top', $top)
-        ->with('style', $style)
+        ->with('top1', $top1)
+        ->with('style1', $style1)
+        ->with('style2', $style2)
+        ->with('style3', $style3)
         ->with('gender', $gender);
   }
 }

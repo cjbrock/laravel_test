@@ -13,10 +13,10 @@
 			<ul>
 				<li><a href="#" class="top_parent">{{ $gender }}</a>
 					<ul>
-						<li><a href="#" class="parent">{{ $style }}</a>
+						<li><a href="#" class="parent">{{ $style1 }}</a>
 							<ul>
-								@foreach($top as $top)
-									<li><a href="#">{{ $top }}</a></li>
+								@foreach($top1 as $top1)
+									<li><a href="#">{{ $top1 }}</a></li>
 								@endforeach
 							</ul>
 						</li>
