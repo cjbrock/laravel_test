@@ -11,11 +11,13 @@
 	<div id="menu-bar-container">
 		<div id="menu-bar">
 			<ul>
-				<li><a href="#" class="top_parent">Moose</a>
+				<li><a href="#" class="top_parent">{{ $gender }}</a>
 					<ul>
-						<li><a href="#" class="parent">Moosen</a>
+						<li><a href="#" class="parent">{{ $style }}</a>
 							<ul>
-								<li><a href="#">Many Much Moosen</a></li>
+								@foreach($top as $top)
+									<li><a href="#">{{ $top }}</a></li>
+								@endforeach
 							</ul>
 						</li>
 					</ul>
