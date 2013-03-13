@@ -20,6 +20,20 @@
 								@endforeach
 							</ul>
 						</li>
+						<li><a href="#" class="parent">{{ $style2 }}</a>
+							<ul>
+								@foreach($top2 as $top2)
+									<li><a href="#">{{ $top2 }}</a></li>
+								@endforeach
+							</ul>
+						</li>
+						<li><a href="#" class="parent">{{ $style3 }}</a>
+							<ul>
+								@foreach($top3 as $top3)
+									<li><a href="#">{{ $top3 }}</a></li>
+								@endforeach
+							</ul>
+						</li>
 					</ul>
 				</li>
 			</ul>

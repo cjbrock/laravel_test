@@ -33,16 +33,25 @@ class Home_Controller extends Base_Controller {
     // {
     //   return View::make('home.index', 
 public function action_index()
-  {    
+  {   
       $input = File::get( path('app').'wg.json');
       $awesome = json_decode($input, true);
       $gender = key($awesome);
       $style1 = key($awesome['Mens']);
-      $style2 = key($awesome['Mens']);
-      $style3 = key($awesome['Mens']);
       $top1 = array_get($awesome, 'Mens.Tennis Shoes');
+
+      next($awesome['Mens']);
+      $style2 = key($awesome['Mens']);
+      $top2 = array_get($awesome, 'Mens.Dress Shoes');
+
+      end($awesome['Mens']);
+      $style3 = key($awesome['Mens']);
+      $top3 = array_get($awesome, 'Mens.Boots');
+
       return View::make('home.index')
         ->with('top1', $top1)
+        ->with('top2', $top2)
+        ->with('top3', $top3)
         ->with('style1', $style1)
         ->with('style2', $style2)
         ->with('style3', $style3)
